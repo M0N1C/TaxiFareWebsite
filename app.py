@@ -4,21 +4,20 @@ import datetime
 
 import requests
 '''
-# TaxiFareModel front
+# Is Art an unique human expression?
 
-This front queries the Le Wagon [taxi fare model API](https://taxifare.lewagon.ai/predict?pickup_datetime=2012-10-06%2012:10:20&pickup_longitude=40.7614327&pickup_latitude=-73.9798156&dropoff_longitude=40.6513111&dropoff_latitude=-73.8803331&passenger_count=2)
-'''
+This front queries NVIDIA software 2020'''
 
-pickup_date = st.date_input('pickup datetime',
+pickup_date = st.date_input('Italy',
                             value=datetime.datetime(2012, 10, 6, 12, 10, 20))
-pickup_time = st.time_input('pickup datetime',
+pickup_time = st.time_input('Russia',
                             value=datetime.datetime(2012, 10, 6, 12, 10, 20))
 pickup_datetime = f'{pickup_date} {pickup_time}'
-pickup_longitude = st.number_input('pickup longitude', value=40.7614327)
-pickup_latitude = st.number_input('pickup latitude', value=-73.9798156)
-dropoff_longitude = st.number_input('dropoff longitude', value=40.6413111)
-dropoff_latitude = st.number_input('dropoff latitude', value=-73.7803331)
-passenger_count = st.number_input('passenger_count',
+pickup_longitude = st.number_input('Spain', value=40.7614327)
+#pickup_latitude = st.number_input('pickup latitude', value=-73.9798156)
+#dropoff_longitude = st.number_input('dropoff longitude', value=40.6413111)
+#dropoff_latitude = st.number_input('dropoff latitude', value=-73.7803331)
+#passenger_count = st.number_input('passenger_count',
                                   min_value=1,
                                   max_value=8,
                                   step=1,
