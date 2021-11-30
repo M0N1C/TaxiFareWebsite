@@ -18,10 +18,10 @@ pickup_longitude = st.number_input('Spain', value=40.7614327)
 #dropoff_longitude = st.number_input('dropoff longitude', value=40.6413111)
 #dropoff_latitude = st.number_input('dropoff latitude', value=-73.7803331)
 #passenger_count = st.number_input('passenger_count',
-                                  min_value=1,
-                                  max_value=8,
-                                  step=1,
-                                  value=1)
+#                                  min_value=1,
+#                                  max_value=8,
+#                                  step=1,
+#                                  value=1)
 
 # enter here the address of your flask api
 url = 'https://taxifare.lewagon.ai/predict'
