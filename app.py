@@ -18,11 +18,11 @@ if st.button('Spain'):
 '''
 # Would you like to see the noise clip?
 '''
-if st.button('Italy'):
+if st.button('Italy Noise'):
     st.write('Italian Art')
-if st.button('Russia'):
+if st.button('Russia Noise'):
     st.write('Russian Art')
-if st.button('Spain'):
+if st.button('Spain Noise'):
     st.write('Spanish Art')
 
 
