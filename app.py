@@ -1,6 +1,5 @@
 import streamlit as st
 
-import datetime
 
 import requests
 '''
@@ -10,10 +9,31 @@ This front queries NVIDIA software 2020'''
 
 if st.button('Italy'):
     st.write('Italian Art')
-elif st.button('Russia'):
+if st.button('Russia'):
     st.write('Russian Art')
-elif st.button('Spain'):
+if st.button('Spain'):
     st.write('Spanish Art')
+
+
+'''
+# Would you like to see the noise clip?
+'''
+if st.button('Italy'):
+    st.write('Italian Art')
+if st.button('Russia'):
+    st.write('Russian Art')
+if st.button('Spain'):
+    st.write('Spanish Art')
+
+
+
+
+
+
+
+
+
+
 
 
 #italy = st.number_input('Italy')
@@ -29,15 +49,6 @@ elif st.button('Spain'):
 #                                  max_value=8,
 #                                  step=1,
 #                                  value=1)
-'''
-# Would you like to see the noise clip?
-'''
-if st.button('Italy'):
-    st.write('Italian Art')
-elif st.button('Russia'):
-    st.write('Russian Art')
-elif st.button('Spain'):
-    st.write('Spanish Art')
 
 
 
