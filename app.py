@@ -4,7 +4,7 @@ import datetime
 
 import requests
 '''
-# Is Art an unique human expression?
+# Is Art a unique human expression?
 
 This front queries NVIDIA software 2020, select number of representative pictures and style'''
 
@@ -21,6 +21,13 @@ spain = st.number_input('Spain')
 #                                  max_value=8,
 #                                  step=1,
 #                                  value=1)
+'''
+# Would you like to see the noise clip?
+A GIF?....
+'''
+
+
+
 
 # enter here the address of your flask api
 url = 'https://taxifare.lewagon.ai/predict'
