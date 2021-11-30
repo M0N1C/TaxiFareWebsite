@@ -6,13 +6,22 @@ import requests
 '''
 # Is Art a unique human expression?
 
-This front queries NVIDIA software 2020, select number of representative pictures and style'''
+This front queries NVIDIA software 2020'''
 
-italy = st.number_input('Italy')
+if st.button('Italy'):
+    st.write('Italian Art')
+elif st.button('Russia'):
+    st.write('Russian Art')
+elif st.button('Spain'):
+    st.write('Spanish Art')
+else:
+    st.write('Choose Italy, Russia or Spain')
 
-russia = st.number_input('Russia')
+#italy = st.number_input('Italy')
+
+#russia = st.number_input('Russia')
 #pickup_datetime = f'{pickup_date} {pickup_time}'
-spain = st.number_input('Spain')
+#spain = st.number_input('Spain')
 #pickup_latitude = st.number_input('pickup latitude', value=-73.9798156)
 #dropoff_longitude = st.number_input('dropoff longitude', value=40.6413111)
 #dropoff_latitude = st.number_input('dropoff latitude', value=-73.7803331)
@@ -34,10 +43,10 @@ url = 'https://taxifare.lewagon.ai/predict'
 
 #params = dict(pickup_datetime=pickup_datetime,
 #              pickup_longitude=pickup_longitude,
- #             pickup_latitude=pickup_latitude,
-  #            dropoff_longitude=dropoff_longitude,
-   #           dropoff_latitude=dropoff_latitude,
-    #          passenger_count=passenger_count)
+#             pickup_latitude=pickup_latitude,
+#            dropoff_longitude=dropoff_longitude,
+#           dropoff_latitude=dropoff_latitude,
+#          passenger_count=passenger_count)
 
 #response = requests.get(url, params=params)
 
