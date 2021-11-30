@@ -14,8 +14,7 @@ elif st.button('Russia'):
     st.write('Russian Art')
 elif st.button('Spain'):
     st.write('Spanish Art')
-else:
-    st.write('Choose Italy, Russia or Spain')
+
 
 #italy = st.number_input('Italy')
 
@@ -32,8 +31,13 @@ else:
 #                                  value=1)
 '''
 # Would you like to see the noise clip?
-A GIF?....
 '''
+if st.button('Italy'):
+    st.write('Italian Art')
+elif st.button('Russia'):
+    st.write('Russian Art')
+elif st.button('Spain'):
+    st.write('Spanish Art')
 
 
 
