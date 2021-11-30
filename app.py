@@ -6,10 +6,11 @@ import requests
 '''
 # Is Art an unique human expression?
 
-This front queries NVIDIA software 2020'''
+This front queries NVIDIA software 2020, select number of representative pictures and style'''
 
-italy = st.date_input('Italy')
-russia = st.time_input('Russia')
+italy = st.number_input('Italy')
+
+russia = st.number_input('Russia')
 #pickup_datetime = f'{pickup_date} {pickup_time}'
 spain = st.number_input('Spain')
 #pickup_latitude = st.number_input('pickup latitude', value=-73.9798156)
