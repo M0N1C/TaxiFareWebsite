@@ -3,82 +3,25 @@ import streamlit as st
 
 import requests
 
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://uploads5.wikiart.org/images/salvador-dali.jpg!Portrait.jpg");
-background-size: cover;
-}
-</style>
-'''
-
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
 '''
 # Is Art a unique human expression?
 
 This front queries NVIDIA software 2020'''
 
-if st.button('Italy'):
-    st.write('Italian Art')
-if st.button('Russia'):
-    st.write('Russian Art')
-if st.button('Spain'):
-    st.write('Spanish Art')
+st.write('Select Country')
 
+option_1 = st.checkbox('Italy')
+option_2 = st.checkbox('Russia')
+option_3 = st.checkbox('Spain')
 
-'''
-# Would you like to see the noise clip?
-'''
-if st.button('Italy Noise'):
-    st.write('Italian Art')
-if st.button('Russia Noise'):
-    st.write('Russian Art')
-if st.button('Spain Noise'):
-    st.write('Spanish Art')
-
-
-
-
-
-
-
-
-
-
-
-
-#italy = st.number_input('Italy')
-
-#russia = st.number_input('Russia')
-#pickup_datetime = f'{pickup_date} {pickup_time}'
-#spain = st.number_input('Spain')
-#pickup_latitude = st.number_input('pickup latitude', value=-73.9798156)
-#dropoff_longitude = st.number_input('dropoff longitude', value=40.6413111)
-#dropoff_latitude = st.number_input('dropoff latitude', value=-73.7803331)
-#passenger_count = st.number_input('passenger_count',
-#                                  min_value=1,
-#                                  max_value=8,
-#                                  step=1,
-#                                  value=1)
-
-
-
-
-# enter here the address of your flask api
-url = 'https://taxifare.lewagon.ai/predict'
-
-#params = dict(pickup_datetime=pickup_datetime,
-#              pickup_longitude=pickup_longitude,
-#             pickup_latitude=pickup_latitude,
-#            dropoff_longitude=dropoff_longitude,
-#           dropoff_latitude=dropoff_latitude,
-#          passenger_count=passenger_count)
-
-#response = requests.get(url, params=params)
-
-#prediction = response.json()
-
-#pred = prediction['prediction']
-
-#pred
+if option_1 or option_2 or option_3:
+    pkl = st.number_input('Choose Pickle and Latent Walk', value=41)
+    left, med1, med2, right = st.columns(4)
+    with left:
+        line = st.button('Line')
+    with med1:
+        noise = st.button('Noise')
+    with med2:
+        circular = st.button('Circular')
+    with right:
+        sphere = st.button('Sphere')
